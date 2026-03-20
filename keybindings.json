@@ -1,0 +1,133 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+alt+cmd+right",
+    "command": "workbench.action.moveEditorToRightGroup",
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+left",
+    "command": "workbench.action.moveEditorToLeftGroup",
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus",
+  },
+  {
+    "key": "alt+cmd+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "alt+cmd+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "cmd+alt+f",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "refactor.extract.function",
+    },
+  },
+  {
+    "key": "cmd+alt+v",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "refactor.extract.constant",
+    },
+  },
+  {
+    "key": "cmd+alt+i",
+    "command": "editor.action.codeAction",
+    "args": {
+      "kind": "refactor.extract.interface",
+    },
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "git.openFile",
+  },
+  {
+    "key": "cmd+y",
+    "command": "chatEditor.action.acceptHunk",
+    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isRequestInProgress",
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "-chatEditor.action.acceptHunk",
+    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isRequestInProgress",
+  },
+  {
+    "key": "cmd+; cmd+right",
+    "command": "editor.action.selectToBracket",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "alt+f5",
+    "command": "chatEditor.action.navigateNext",
+    "when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus",
+  },
+  {
+    "key": "alt+f5",
+    "command": "-chatEditor.action.navigateNext",
+    "when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused",
+  },
+  {
+    "key": "cmd+shift+]",
+    "command": "workbench.action.nextEditorInGroup",
+  },
+  {
+    "key": "cmd+shift+[",
+    "command": "workbench.action.previousEditorInGroup",
+  },
+  {
+    "key": "shift+cmd+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly",
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly",
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.cpp.toggle",
+  },
+  {
+    "key": "shift+cmd+space",
+    "command": "-composer.toggleVoiceDictation",
+    "when": "!terminalFocus",
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "-editor.action.smartSelect.expand",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "alt+cmd+z",
+    "command": "git.revertSelectedRanges",
+    "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'",
+  },
+  {
+    "key": "cmd+k cmd+r",
+    "command": "-git.revertSelectedRanges",
+    "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'",
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "-editor.action.smartSelect.shrink",
+    "when": "editorTextFocus",
+  },
+]
